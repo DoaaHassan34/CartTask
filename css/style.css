@@ -1,0 +1,128 @@
+body{
+    perspective: 700px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+main-container{
+    width: 100px;
+    margin: auto;
+}
+main i{
+    color: rgb(240, 131, 131);
+    font-size: 20px;
+}
+main img{
+    margin-right: 20px;
+    border: 2px solid rgb(240, 131, 131);
+    border-radius: 50%;
+}
+.main-lang{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(240, 131, 131);
+}
+.main-login{
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    color: rgb(240, 131, 131);
+    margin-left: 800px;
+    border: none;
+    background-color: white;
+}
+.main-login:hover{
+    background-color:  rgba(240, 131, 131,0.2);
+}
+
+.main-title{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -20px;
+    color: rgb(240, 131, 131);
+    font-size: 40px;
+}
+.main-line{
+    width: 50px;
+    height: 3px;
+    margin: 30px auto;
+    background-color:  rgb(240, 131, 131);
+}
+section{
+    width:90%;
+    margin: auto;
+    /* overflow:hidden;  */
+}
+.cart{
+    transform-style: preserve-3d;
+    position: relative;
+    width: 20%;
+    height: 350px;
+    transition: all 1.5s;
+    float: left;
+    margin: 20px;
+    box-shadow: 1px 1px 10px 1px rgb(248, 248, 124);
+}
+.front , .back{ 
+    position: absolute;  
+    width: 100%;
+    height: 350px;
+    border: 2px solid   rgba(240, 131, 131,0.5);
+    top: 0px;
+    left: 0px;
+    backface-visibility: hidden;
+}
+.front{
+
+    z-index: 1;
+}
+.front img{
+    width: 100%;
+    height: 270px;
+}
+.front h2{
+    text-align: center;
+    color:  rgb(240, 131, 131);
+}
+
+.back{
+    transform: rotateY(180deg);
+    background-image: url(../images/backgroud.png);
+    background-repeat: no-repeat;
+    background-position:right bottom;
+    
+}
+.back h3{
+    text-align: center;
+    margin-top: 40px;
+    color:  rgb(240, 131, 131);
+    font-size: 25px;
+}
+.cart:hover{
+    transform: rotateY(180deg);
+}
+
+.back p{
+    margin-left: 10px;
+    margin-top: 25px;
+    font-size: 20px;
+    color: rgb(91, 128, 241);
+}
+.back span{
+    margin: 60px;
+    color:  rgb(240, 131, 131);
+    font-size: 20px; 
+}
+.back a{
+
+    margin-left: 100px;
+    margin-top: 30px;
+    display: block;
+    color:  rgb(91, 128, 241);
+    font-size: 30px;
+    text-decoration: none;
+  
+}
